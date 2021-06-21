@@ -1,0 +1,53 @@
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Truth or Dare - Players' names</title>
+    <script src="/js/bootstrap.js"></script>
+    <script src="/js/jquery-3.6.0.js"></script>
+    <script src="/js/popper.js"></script>
+    <script defer src="/app/script.js"></script>
+    <link rel="icon" href="/icons/favicon.ico" />
+    <link rel="stylesheet" href="/css/bootstrap.css" />
+    <link rel="stylesheet" href="/app/style.css" />
+    <link rel="stylesheet" href="/app/number.css" />
+  </head>
+
+  <body>
+    <div class="container1">
+      <div id="loginBox" class="container">
+        <div class="row">
+          <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
+            <div class="signupcard card-signin my-5">
+              <div class="card-body">
+                <h5 class="card-title text-center">Names of the players</h5>
+                <form class="form-signin" method="POST" action="/names">
+                  {{#for 0 number 1}}
+                    <div class="form-label-group">
+                      <input
+                        type="text"
+                        name="{{this}}"
+                        class="form-control p-1 ps-3"
+                        placeholder="Player name"
+                        required
+                      />
+                    </div>
+                  {{/for}}
+                  <button
+                    id="btnStart"
+                    class="btn btn-lg btn-outline-light"
+                  >Start</button>
+
+                </form>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+
+</html>

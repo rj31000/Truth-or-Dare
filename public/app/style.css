@@ -1,0 +1,41 @@
+body {
+    font-family: 'Alatsi', sans-serif;
+    margin: 0;
+    overflow: hidden;
+    background: black;
+}
+
+.container1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+.user_img {
+    height: 100px;
+    width: 100px;
+    /* border: 1.5px solid #f5f6fa; */
+    background-color: transparent;
+}
+
+canvas {
+    width: 100%;
+}
+
+#goBtn {
+    width: 100px;
+}
+
+#endBtn {
+    width: 100px;
+}
+
+.playerBtn {
+    font-size: 22px;
+}

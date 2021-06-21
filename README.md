@@ -1,1 +1,1 @@
-# Truth-or-Dare
+# TruthOrDare
