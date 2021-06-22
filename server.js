@@ -102,7 +102,6 @@ app.get('/game', (req, res) => {
     }
     getPlayer1()
     getPlayer2()
-    Assigntask()
     res.render('game', {
         layout: false,
         player1,
