@@ -17,14 +17,6 @@ app.set('view engine', 'hbs');
 var hbs = expressHbs.create({});
 
 
-// hbs.handlebars.registerHelper('times', function(n, block) {
-//     var accum = '';
-//     for(var i = 0; i < n; ++i)
-//         accum += block.fn(i);
-//     return accum;
-// });
-
-
 hbs.handlebars.registerHelper('for', function (from, to, incr, block) {
     var accum = '';
     for (var i = from; i < to; i += incr)
@@ -91,7 +83,6 @@ function getPlayer2() {
     }
     return
 }
-
 
 
 app.get('/game', (req, res) => {
